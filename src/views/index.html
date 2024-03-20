@@ -1,0 +1,71 @@
+<!-- 
+
+Frequencies peak high and low. The Valley below is full of foes.
+Not Calugila, who ciphers goes; though ancient be, my stature woes.
+
+I shall dring forth, a Swedish crew; Vikings together, we stand with Bluetooth.
+
+-->
+
+<!-- I would love for people to not use any adblock so I can actually pay for the API calls, but I won't enforce it -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+    <script src="../public/activate-dark-mode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Game</title>
+
+    <!-- metadata -->
+
+    
+    <!-- plugins -->
+    <link rel="stylesheet" href="https://unpkg.com/blaze-slider@latest/dist/blaze.css">
+    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <!-- static -->
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="../public/script.js" defer></script>
+</head>
+
+<body>
+    <div id="mode-toggle" class="mode-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="sun-icon" viewbox="0 0 32 32">
+            <image xlink:href="https://svgshare.com/i/syz.svg" width="32" height="32"/>    
+        </svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="moon-icon" viewbox="0 0 32 32">
+            <image xlink:href="https://svgshare.com/i/t0g.svg" width="32" height="32"/>
+        </svg>
+    </div>
+    <div class="app-container">
+        <div class="emoji-container"> {{ emojis | safe }} </div>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input class="search-input" id="search-input" type="text" autocomplete="off" placeholder="Guess...">
+            </div>
+        </div>
+    </div>
+    <div class="attribution disableCaret">
+        <ul>
+            <li>The Emoji Game does not collect information nor store cookies locally or otherwise.</li>
+            <li>The Emoji Game made with <div class="heart-emoji">🖤</div> by <a href="https://sidewaysturtle.com" target="_blank">Sideways Turtle</a> and <a href="https://github.com/SanoKei" target="_blank">Sano</a></li>
+        </ul>
+    </div>
+</body>
+</html>

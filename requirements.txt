@@ -1,0 +1,4 @@
+langdetect >= 1.0.9
+anthropic
+flask
+Levenshtein

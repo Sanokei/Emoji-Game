@@ -1,0 +1,179 @@
+*:not(input) {
+    cursor: default;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+a:link {
+    color: #66cc66;
+}
+  
+a:visited {
+    color: #66cc66;
+}
+
+a:hover {
+    color: #ff9999;
+}
+
+a:active {
+    color: #99ccff;
+}
+
+.disableCaret{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;       
+}
+
+.app-container {
+    display: grid;
+    grid-template-areas:
+        "emoji"
+        "search";
+    grid-template-rows: auto auto 1fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 370px;
+}
+
+.emoji-container {
+    grid-area: emoji;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 16px;
+}
+
+.search-container {
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goback-button {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 200px;
+    outline: none;
+}
+
+.search-input {
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    width: 200px;
+    outline: none;
+}
+/**/
+
+/*Attributes*/
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.attribution li {
+    color: #b9b9b9;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    list-style:none;
+}
+
+.heart-emoji {
+    display:inline;
+}
+
+.tippy-tooltip.techy-theme {
+    background-color: white;
+    color: #282828;
+}
+
+/* Dark mode */
+.mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.sun-icon, .moon-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    fill: #191414;
+    transition: opacity 0.3s;
+}
+
+.moon-icon {
+    opacity: 0;
+    filter: invert(88%) sepia(1%) saturate(2109%) hue-rotate(336deg) brightness(113%) contrast(101%);
+}
+
+/* Add styles for the dark mode */
+.dark-mode .sun-icon {
+    opacity: 0;
+}
+
+.dark-mode .moon-icon {
+    opacity: 1;
+}
+
+.dark-mode body{
+    background-color: #191414;
+    color: white;
+}
+.dark-mode .search-input {
+    background-color: #282828;
+    color: white;
+}
+
+.dark-mode .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode a:link {
+    color: #026102;
+}
+
+.dark-mode a:visited {
+    color: #026102;
+}
+
+.dark-mode a:hover {
+    color: #99cc99;
+}
+
+.dark-mode a:active {
+    color: #ffcccc;
+}
+
+.dark-mode .heart-emoji{
+    font-size: 0;
+}
+
+.dark-mode .heart-emoji::after {
+    content:'🤍';
+    font-size: 1rem;
+}
+
+.dark-mode .tippy-tooltip.techy-theme {
+    background-color: #282828;
+    color: white;
+}
